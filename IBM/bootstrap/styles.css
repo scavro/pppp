@@ -1,0 +1,40 @@
+:root {
+    font-size: 16px;
+  }
+
+.caja{
+    margin: 20px;
+}
+
+.show{
+    margin: 20px;
+}
+
+.container{
+    margin: 30px;
+}
+
+.colores{
+    margin: 30px;
+    padding: 10px;
+    border: solid 1px black;
+    border-radius: 10px;
+}
+
+.botones {
+    margin: 40px;
+}
+
+.titulo{
+    margin: 20px;
+    text-align: center;
+}
+.color{
+    margin: 30px;
+    text-align: center;    
+}
+
+.margen-personalizado {
+    margin: 29px;
+}
+

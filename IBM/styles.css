@@ -1,0 +1,63 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+/*p[name="miEstilo"] { 
+    color: aqua; 
+}*/
+
+p {
+    font-family:Afacad Flux ;
+    /*border: solid 1px black;*/
+}
+
+
+.segundo{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+
+
+h1{
+    border: solid 5px black;
+}
+
+h2 {
+    border: solid 5px black;
+}
+
+.parrafo {
+    background: linear-gradient(to top,
+    #33ccff 0%, #ff99cc 100%);    
+}
+
+a:hover{color:pink}
+a:active{color:chartreuse}
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 400px;
+    width: 900px;
+    border: 1px solid black;
+    
+}
+
+.item  {
+    border: solid 1px black;
+    background: pink;
+    padding: 10px;
+    margin: 8px;
+    flex-basis: content;
+
+}
+
+.item-1{background:azure;
+align-self: flex start;}
+
+.item-2{background: wheat;}
+
+.item-3{
+    background: chocolate;
+    align-self: flex-end;
+}
