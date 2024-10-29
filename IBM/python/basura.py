@@ -1,31 +1,34 @@
-"""num1 = int(input("Introduce el numero a dividir: "))
-num2 = int(input("Introduce el numero a dividir: "))
+def min (num1, num2):
+    if num1 < num2:
+        return num1
+    elif num1 == num2:
+        return "Los dos numeros son iguales"
+    else:
+        return num2
 
-print("el resultado de la division es: ", num1/num2)"""
-
-
-# Definimos una variable x con una cadena
-x = "El valor de (a+b)*c es"
-# Podemos realizar múltiples asignaciones
-a, b, c = 4, 3, 2
-# Realizamos unas operaciones con a,b,c
-d = (a + b) * c
-# Definimos una variable booleana
-imprimir = True
-# Si imprimir, print()
-if imprimir:
-    print(x, d)
-# Salida: El valor de (a+b)*c es 14
-
-
-x = (1 + 2 + 3 + 4 +
-5 + 6 + 7 + 8)
-print(x)
-
-
-# esto es un comentario
-
-# esto es un comentario222
+def peticion_numeros():
+    while True:
+        entrada = input("Por favor, ingrese un número positivo: ")
+        
+        # Verificar si la entrada contiene solo dígitos y posiblemente un punto decimal
+        if not (entrada.replace('.', '', 1).isdigit() and entrada.count('.') <= 1):
+            print("Error: Ha introducido un carácter no numérico. Por favor, introduzca solo números.")
+            continue
+        
+        try:
+            num = float(entrada)
+            if num > 0:
+                return num
+            else:
+                print("Error: El número debe ser mayor que 0.")
+        except ValueError:
+            print("Error: Por favor, ingrese un número válido.")
 
 
-# scavro/ibm
+num1 = peticion_numeros()
+num2 = peticion_numeros()
+
+x = min(num1, num2)
+
+print("El menor de los dos numero es:",x)
+
